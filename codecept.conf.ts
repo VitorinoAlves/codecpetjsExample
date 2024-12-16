@@ -7,6 +7,16 @@ export const config: CodeceptJS.MainConfig = {
       browser: 'chromium',
       url: 'http://localhost',
       show: true
+    },
+    Mochawesome: {
+        uniqueScreenshotNames: true
+    }
+  },
+  plugins:{
+  },
+  mocha: {
+    reporterOptions: {
+        reportDir: "output"
     }
   },
   include: {

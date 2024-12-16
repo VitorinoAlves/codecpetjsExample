@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx codeceptjs run"
+    "test": "npx codeceptjs run --reporter mochawesome"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +13,8 @@
     "codeceptjs": "^3.6.10",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "mochawesome": "^7.1.3"
   }
 }
