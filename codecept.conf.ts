@@ -1,5 +1,5 @@
 export const config: CodeceptJS.MainConfig = {
-  tests: './*_test.ts',
+  tests: './cases/*_test.ts',
   output: './output',
   fullPromiseBased: true,
   helpers: {

@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx codeceptjs run --reporter mochawesome"
+    "test": "npx codeceptjs run",
+    "testParallel": "npx codeceptjs run-workers 2",
+    "testMocha": "npx codeceptjs run --reporter mochawesome",
+    "testDemo": "npx codeceptjs run --grep \"@demo\" --debug"
   },
   "author": "",
   "license": "ISC",
