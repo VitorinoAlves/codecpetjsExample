@@ -1,4 +1,8 @@
 const { I, productListPagePage } = inject();
+import PageObjectExample from "./PageObjectExample";
+
+
+const pageObjectExample = new PageObjectExample();
 
 export = {
 
@@ -9,11 +13,12 @@ export = {
   },
   loginButton: {css: '#login-button'},
 
-  login(userName: string, password: string){
+  async login(userName: string, password: string){
     I.fillField(this.fields.userName, userName);
     I.fillField(this.fields.password, password);
     I.click(this.loginButton);
 
-    productListPagePage.waitForProductPage()
+    await pageObjectExample.waitForProductPage()
+    //productListPagePage.waitForProductPage()
   }
 }

@@ -17,6 +17,7 @@
     "allure-codeceptjs": "^3.0.7",
     "codeceptjs": "^3.6.10",
     "ts-node": "^10.9.2",
+    "tslint": "^5.20.1",
     "typescript": "^5.7.2"
   },
   "dependencies": {

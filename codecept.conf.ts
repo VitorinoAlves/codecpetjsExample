@@ -28,7 +28,7 @@ export const config: CodeceptJS.MainConfig = {
   include: {
     I: './steps_file',
     loginDemoObjectPage: "./pages/loginDemoObject.ts",
-    productListPagePage: "./pages/productListPage.ts",
+    productListPagePage: "./pages/productListPage.ts"
   },
   name: 'codeceptJSExample'
 }
