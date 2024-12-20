@@ -6,21 +6,29 @@ export const config: CodeceptJS.MainConfig = {
     Playwright: {
       browser: 'chromium',
       url: 'http://localhost',
-      show: true
+      show: true,
+      video: true,
+      trace: true
     },
     Mochawesome: {
-        uniqueScreenshotNames: true
+      uniqueScreenshotNames: true
     }
   },
-  plugins:{
+  plugins: {
+    allure: {
+      enabled: true,
+      require: "allure-codeceptjs",
+    },
   },
   mocha: {
     reporterOptions: {
-        reportDir: "output"
+      reportDir: "output"
     }
   },
   include: {
-    I: './steps_file'
+    I: './steps_file',
+    loginDemoObjectPage: "./pages/loginDemoObject.ts",
+    productListPagePage: "./pages/productListPage.ts",
   },
   name: 'codeceptJSExample'
 }

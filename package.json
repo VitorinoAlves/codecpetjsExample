@@ -6,13 +6,15 @@
     "test": "npx codeceptjs run",
     "testParallel": "npx codeceptjs run-workers 2",
     "testMocha": "npx codeceptjs run --reporter mochawesome",
-    "testDemo": "npx codeceptjs run --grep \"@demo\" --debug"
+    "testDemo": "npx codeceptjs run --grep \"@demo\" --debug",
+    "startAllure": "allure serve allure-results"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@types/node": "^22.10.2",
+    "allure-codeceptjs": "^3.0.7",
     "codeceptjs": "^3.6.10",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
